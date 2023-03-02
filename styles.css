@@ -1,0 +1,381 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 1.7em;
+  font-family: Arial;
+  color: gray;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+}
+
+.logo-container {
+  padding: 15px;
+}
+
+.logo-image {
+  height: 1.5rem;
+}
+
+.jumbo-items {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 22em;
+}
+
+.main-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 5%;
+  object-fit: cover;
+  object-position: 50% 23%;
+}
+
+.shape1 {
+  position: relative;
+  right: -21em;
+  top: -5px;
+  height: 105%;
+  width: 45em;
+}
+
+.head-text {
+  padding: 0 30px;
+}
+
+.heading {
+  color: green;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  background: green;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.space {
+  padding-bottom: 10px;
+}
+
+.heading-text {
+  margin-top: 35px;
+}
+
+.button {
+  text-align: center;
+}
+
+.view-careers {
+  border: 0;
+  padding: 7px 20px;
+  background-color: rgb(255, 123, 0);
+  color: white;
+  font-size: 0.9em;
+}
+
+.body-head-text {
+  text-align: center;
+  color: green;
+  margin-top: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+}
+
+.info-box-text {
+  margin-top: -10px;
+}
+
+.link {
+  text-decoration: none;
+  color: green;
+}
+
+.info-box-title {
+  color: green;
+}
+
+.info-box {
+  padding: 0 30px;
+  position: relative;
+}
+
+.top::after {
+  position: absolute;
+  content: "";
+  height: 70%;
+  width: 2px;
+  top: 25px;
+  background: rgba(214, 214, 214, 0.956);
+  right: -9px;
+  margin: 10px;
+}
+
+.lower::after {
+  position: absolute;
+  content: "";
+  height: 70%;
+  width: 2px;
+  top: 25px;
+  background: rgba(214, 214, 214, 0.956);
+  right: -9px;
+  margin: 10px;
+}
+
+.loan-card-title {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.loan-card-table {
+  margin: 30px;
+}
+
+.loan-card-title {
+  padding: 15px;
+  color: white;
+  font-weight: 100;
+  background-color: green;
+}
+
+.card-text {
+  padding: 15px 40px;
+  background-color: rgb(232, 244, 232);
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.quotes {
+  position: absolute;
+  opacity: 0.1;
+}
+
+.quote-image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.quote-theme {
+  color: green;
+}
+
+.quote-text {
+  font-style: italic;
+}
+
+.first,
+.third {
+  padding: 0 80px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials {
+  width: 100px;
+  padding: 20px 0 10px;
+}
+
+.eeo-text {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 15px;
+}
+
+.eeo-link,
+.add-info {
+  color: black;
+}
+
+footer {
+  margin-top: 5em;
+  padding: 0 30px;
+  border-top: 1px solid green;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+.footer-link {
+  text-decoration: none;
+  padding-right: 10px;
+  color: black;
+}
+
+.site {
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbo-items {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 25vh;
+    overflow: hidden;
+  }
+  .shape1 {
+    right: -17em;
+    height: 15.8em;
+    width: 35em;
+  }
+  main {
+    position: relative;
+    top: 0;
+  }
+  .head-text {
+    position: relative;
+    top: 0;
+  }
+  .info-box {
+    padding: 0 15px;
+  }
+  .info-box-text {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+  }
+  .last {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 5px;
+  }
+  .quote-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 15px 35px;
+  }
+  footer {
+    margin-top: 2em;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .logo-container {
+    text-align: center;
+    padding: 15px;
+  }
+  .logo-image {
+    width: 65%;
+    height: 65%;
+  }
+  .jumbo-items {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 16em;
+    overflow: hidden;
+  }
+  .main-image {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    transform: scale(2.8);
+    object-fit: contain;
+    object-position: 3em 2.8em;
+  }
+  .shape1 {
+    display: none;
+  }
+  .head-text {
+    position: relative;
+    top: 0;
+    padding: 15px;
+    margin-top: -10px;
+  }
+  .heading {
+    margin: 15px;
+  }
+  .heading-text {
+    text-align: left;
+  }
+  .button {
+    margin-top: 20px;
+    white-space: nowrap;
+  }
+  .view-careers {
+    text-align: center;
+  }
+  .body-head-text {
+    padding: 0 15%;
+  }
+  .card-grid {
+    margin-top: 50px;
+  }
+  .info-box-title {
+    margin-top: -15px;
+  }
+  .loan-card-table {
+    margin: 15px;
+  }
+  .card-text {
+    padding: 10px;
+  }
+  .loan-card-title {
+    font-size: 1.3em;
+  }
+  .quote-text {
+    padding: 0 40px;
+  }
+  footer {
+    padding: 15px;
+  }
+  .socials {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .eeo-text {
+    text-align: left;
+  }
+  .footer-links {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
